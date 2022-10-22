@@ -41,11 +41,11 @@ Console.Write("Input a number1: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a number2: "); 
 int number2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Proverka(number1, number2));*/ 
+Console.WriteLine(Proverka(number1, number2));*/
 
 
 //Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным первому.
-bool Multiple(int number1, int number2)
+/*bool Multiple(int number1, int number2)
 {
     if(number1 % number2 == 0)
         return true;
@@ -56,4 +56,21 @@ Console.Write("input a number1: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a number2: "); 
 int number2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Multiple(number1, number2));
+Console.WriteLine(Multiple(number1, number2)); */
+
+/* Напишите программу, которая принимает три целых числа(a, m, n) и проверяет, кратно ли число a одновременно m и n.*/
+
+/* bool Exam(int a, int m, int n)
+{
+     if (a % m == 0 && a % n == 0)
+        return true;
+     else
+        return false;
+}
+Console.Write("input a: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("input n: ");
+int n = Convert.ToInt32(Console.ReadLine());Console.WriteLine(Exam(a, m, n)); */
+
