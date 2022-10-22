@@ -45,3 +45,15 @@ Console.WriteLine(Proverka(number1, number2));*/
 
 
 //Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным первому.
+bool Multiple(int number1, int number2)
+{
+    if(number1 % number2 == 0)
+        return true;
+    else
+        return false;
+}
+Console.Write("input a number1: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a number2: "); 
+int number2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Multiple(number1, number2));
