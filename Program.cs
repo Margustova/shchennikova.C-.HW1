@@ -79,7 +79,7 @@ Console.WriteLine(Exam(a, m, n)); */
 
 456 -> 5
 782 -> 8
-918 -> 1 */
+918 -> 1 
 
 int Digit(int ThreeDigitNumber)
 {
@@ -88,8 +88,7 @@ int Digit(int ThreeDigitNumber)
 }
 Console.Write("input ThreeDigitNumber: ");
 int ThreeDigitNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Digit(ThreeDigitNumber));
-
+Console.WriteLine(Digit(ThreeDigitNumber)); */
 
 /* Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
@@ -97,10 +96,53 @@ Console.WriteLine(Digit(ThreeDigitNumber));
 
 78 -> третьей цифры нет
 
-32679 -> 6
+32679 -> 6*/
 
-Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+/* int Digit(int Number)
+{
+    if(Number > 1000);
+        int result = Number /10;
+        return Number;
+    if(Number < 1000 || Number > 99)
+        int result = Number % 10;
+        return result;
+    
+
+
+/*int result = (Number / 10) % 100;
+       if(result <= 100)
+            return result;
+        else 
+        {
+         Console.WriteLine("Такой цифры нет");
+        return -1;
+        
+        }
+}
+Console.Write("input Number: ");
+int Number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Digit(Number)); */
+
+/* Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
 
 6 -> да
 7 -> да
 1 -> нет */
+
+bool Day(int Number)
+{
+    if (Number <6)
+        return true;
+        
+    else   
+        return false;  
+         
+}
+Console.Write("input day of the week: ");
+int Number = Convert.ToInt32(Console.ReadLine());
+if(Day(Number)) 
+    Console.WriteLine("No");
+
+else
+    Console.WriteLine("Yes");
