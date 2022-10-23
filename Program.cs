@@ -98,37 +98,38 @@ Console.WriteLine(Digit(ThreeDigitNumber)); */
 
 32679 -> 6*/
 
-/* int Digit(int Number)
+ int Digit(int Number)
 {
-    if(Number > 1000);
-        int result = Number /10;
-        return Number;
-    if(Number < 1000 || Number > 99)
-        int result = Number % 10;
-        return result;
-    
-
-
-/*int result = (Number / 10) % 100;
-       if(result <= 100)
-            return result;
-        else 
+    if (Number > 1000)
+    {
+        while (Number > 1000)
         {
-         Console.WriteLine("Такой цифры нет");
-        return -1;
-        
+            Number = Number / 10;
         }
-}
-Console.Write("input Number: ");
+    }
+    
+    if(Number < 1000 && Number > 99)
+        {
+            Number = Number % 10;
+
+            return Number;
+        }
+    else 
+       Console.WriteLine("Третьей цифры нет");
+       return -1 ;
+        
+}   
+    Console.Write("input Number: ");
 int Number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Digit(Number)); */
+Console.WriteLine(Digit(Number));
+
 
 /* Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-
+ 
 6 -> да
 7 -> да
-1 -> нет */
+1 -> нет 
 
 bool Day(int Number)
 {
@@ -145,4 +146,4 @@ if(Day(Number))
     Console.WriteLine("No");
 
 else
-    Console.WriteLine("Yes");
+    Console.WriteLine("Yes");*/
