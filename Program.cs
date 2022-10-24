@@ -96,7 +96,7 @@ Console.WriteLine(Digit(ThreeDigitNumber)); */
 
 78 -> третьей цифры нет
 
-32679 -> 6*/
+32679 -> 6
 
  int Digit(int Number)
 {
@@ -121,7 +121,7 @@ Console.WriteLine(Digit(ThreeDigitNumber)); */
 }   
     Console.Write("input Number: ");
 int Number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Digit(Number));
+Console.WriteLine(Digit(Number)); */
 
 
 /* Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
